@@ -5,8 +5,8 @@ const repoName = 'CV'; // <-- Replace with your actual repo name
 
 const nextConfig = {
   output: 'export', // <-- enable static export
-  assetPrefix: isProd ? `/${repoName}/` : '',
-  basePath: isProd ? `/${repoName}` : '',
+  // assetPrefix: isProd ? `/${repoName}/` : '',
+  // basePath: isProd ? `/${repoName}` : '',
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
