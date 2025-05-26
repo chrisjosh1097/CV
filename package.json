@@ -11,7 +11,7 @@
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -r https://github.com/chrisjosh1097/CV.git"
   },
 
   "dependencies": {

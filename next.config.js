@@ -45,12 +45,11 @@ const nextConfig = {
 };
 
 module.exports = {
-  nextConfig,
   output: 'export',
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
-  unoptimized: true,
+    unoptimized: true,
   },
 };
 
