@@ -49,6 +49,8 @@ module.exports = {
   output: 'export',
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
-  // (the rest of your config remains the same)
+  images: {
+  unoptimized: true,
+  },
 };
 
