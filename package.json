@@ -11,9 +11,8 @@
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d out -r https://github.com/chrisjosh1097/CV.git --branch gh-pages --message 'Deploy CV site' --force"
-
-  },
+    "deploy": "gh-pages -d out -r https://github.com/chrisjosh1097/CV.git -b gh-pages -m 'Deploy CV site'"
+},
 
   "dependencies": {
     "@headlessui/react": "^1.7.16",
