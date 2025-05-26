@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "yarn compile && yarn next build",
-    "clean": "rm -rf build-tsc .next out",
+    "clean": "rimraf build-tsc .next out",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
@@ -12,8 +12,7 @@
     "sitemap": "yarn next-sitemap",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d out -r git@github.com:chrisjosh1097/chrisjosh1097.github.io.git"
-},
-
+  },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
@@ -52,6 +51,7 @@
     "postcss-preset-env": "^9.1.0",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "rimraf": "^6.0.1",
     "sass": "^1.64.2",
     "sort-package-json": "^2.5.1",
     "stylelint": "^15.10.2",
